@@ -1,0 +1,21 @@
+def get_first_element(lst):
+    # Print the first element in the list
+    print(lst[0])
+
+def main():
+    # Ask the user how many elements they want to input
+    n = int(input("How many elements do you want to enter in the list? "))
+    
+    # Initialize an empty list
+    user_list = []
+    
+    # Prompt the user to input the elements one at a time
+    for i in range(n):
+        element = input(f"Enter element {i + 1}: ")
+        user_list.append(element)
+    
+    # Call the function to print the first element in the list
+    get_first_element(user_list)
+
+if __name__ == "__main__":
+    main()
